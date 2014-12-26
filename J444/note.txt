@@ -1,0 +1,43 @@
+*************************
+In the name of god
+Parham Alvani
+(parham.alvani@gmial.com)
+*************************
+===========================================
+      0x080480f6    bd4c910408   mov ebp, 0x804914c	;[Input string]
+      0x080480fb    31c0         xor eax, eax
+.---> 0x080480fd    bb0a000000   mov ebx, 0xa
+|     0x08048102    f7e3         mul ebx
+|     0x08048104    89c3         mov ebx, eax
+|     0x08048106    8b4500       mov eax, [ebp]
+|     0x08048109    25ff000000   and eax, 0xff
+|     0x0804810e    83f839       cmp eax, 0x39
+| ,=< 0x08048111    770e         ja 0x8048121
+| |   0x08048113    2c30         sub al, 0x30
+|,==< 0x08048115    720a         jb 0x8048121
+|||   0x08048117    01d8         add eax, ebx
+|||   0x08048119    45           inc ebp
+|||   0x0804811a    a396910408   mov [0x8049196], eax
+`===< 0x0804811f    ebdc         jmp 0x1080480fd
+ ``-> 0x08048121    c3           ret			;[Checking phase]
+===========================================
+First with code noted above the program covert
+entered string into number and store this number
+in address 0x8049196
+===========================================
+    0x080480ad    b904000000   mov ecx, 0x4
+    0x080480b2    beb4910408   mov esi, 0x80491b4	;[Input number]
+    0x080480b7    bf96910408   mov edi, 0x8049196	;[Password ;-)]
+    0x080480bc    f3a6         repe cmpsb
+,=< 0x080480be    7411         jz 0x80480d1 		;[Exit failure]
+|   0x080480c0    b99a910408   mov ecx, 0x804919a
+|   0x080480c5    ba1a000000   mov edx, 0x1a
+|   0x080480ca    e81a000000   call 0x80480e9 		;[Exit success]
+===========================================
+Then with code noted above the program compare
+number store in 0x8049196 with number store
+0x80491b4 [password !!!].
+So if we read 4 byte [32bit integer size] from
+0x80491b4 we have 247356 !!!
+
+*************************
