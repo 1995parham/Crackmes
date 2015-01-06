@@ -1,0 +1,10 @@
+First of all program build number 25517
+and store it in address 0x8049292.
+
+Second program read string from user and
+store it under address 0x80491d8.
+
+then convert it into hexdecimal value and
+compare it with 4819AB9 so answer is:
+
+password : 4819AB9
