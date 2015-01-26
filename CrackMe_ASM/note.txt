@@ -1,0 +1,30 @@
+*************************
+In the name of god
+Parham Alvani
+(parham.alvani@gmial.com)
+*************************
+==================================
+0x080480b1    c60053       mov $0x53, (%eax)
+0x080480b4    83c001       add $0x1, %eax
+0x080480b7    c60033       mov $0x33, (%eax)
+0x080480ba    83c001       add $0x1, %eax
+0x080480bd    c60043       mov $0x43, (%eax)
+0x080480c0    83c001       add $0x1, %eax
+0x080480c3    c60072       mov $0x72, (%eax)
+0x080480c6    83c001       add $0x1, %eax
+0x080480c9    c60045       mov $0x45, (%eax)
+0x080480cc    83c001       add $0x1, %eax
+0x080480cf    c6002b       mov $0x2b, (%eax)
+0x080480d2    83c001       add $0x1, %eax
+0x080480d5    c60046       mov $0x46, (%eax)
+0x080480d8    83c001       add $0x1, %eax
+0x080480db    c6006c       mov $0x6c, (%eax)
+0x080480de    83c001       add $0x1, %eax
+0x080480e1    c60034       mov $0x34, (%eax)
+0x080480e4    83c001       add $0x1, %eax
+0x080480e7    c60047       mov $0x47, (%eax)
+0x080480ea    83c001       add $0x1, %eax
+0x080480ed    c60021       mov $0x21, (%eax)
+==================================
+0x53 0x33 0x43 0x72 0x45 0x2b 0x46 0x6c 0x34 0x47 0x21
+ S    3    C     r   a    +    F    l    4    G    !
