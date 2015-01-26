@@ -1,0 +1,14 @@
+*************************
+In the name of god
+Parham Alvani
+(parham.alvani@gmial.com)
+*************************
+==================================
+0x8048a99:	cmpl   $0x2,0x1c(%esp)
+0x8048a9e:	jle    0x8048a61
+0x8048aa0:	cmpl   $0x1e,0x1c(%esp)
+0x8048aa5:	jg     0x8048a61
+==================================
+0x1c(%esp) : User input length
+0x8048a61 : Repeat
+[*] 2 < < 30
